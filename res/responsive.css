@@ -1,0 +1,446 @@
+.navbar-header{
+    position: relative;
+}
+#mobile-nav-btn{
+    font-size: 30px;
+    color: #f4c613;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    display: none;
+}
+#mobile-nav{
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: rgba(255, 255, 255, .9);
+    transition: all linear 400ms;
+    overflow-y: hidden;
+}
+#mobile-nav-close-btn{
+    font-family: 'Raleway',sans-serif;
+    font-size: 70px;
+    color: #212226;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    transition: .4s;
+}
+#mobile-nav-content{
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%;
+}
+#mobile-nav ul li{
+    margin-bottom: 20px;
+}
+#mobile-nav a{
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    color: #212226;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline;
+    transition: .4s;
+}
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus{
+    color: #f4c613;
+    transition: all linear 400ms;
+    background: none;
+}
+.white-nav-top #mobile-nav ul.nav>li.active>a{
+    color: #f4c613;
+    font-weight: 500;
+}
+/* Bootstrap 5 Media Queires */
+/* Extra Large Devices */
+@media(min-width: 1300px) and (max-width: 2000px){
+    #services-tabs .tab-bg{
+        height: 585px;
+    }
+}
+/* Large Devices */
+@media(min-width: 1200px) and (max-width: 1299px){
+    .site-nav-wrapper{
+        padding: 0 20px;
+    }
+    #services-tabs .tab-bg{
+        height: 585px;
+    }
+}
+/* Medium devices */
+@media(min-width: 992px) and (max-width: 1199px){
+    .site-nav-wrapper{
+        padding: 0;
+    }
+    .vertical-heading h2{
+        font-size: 29px;
+    }
+    .vertical-heading h5{
+        margin-left: 15px;
+        bottom: -15px;
+    }
+    #offices .office{
+        margin-left: 15px;
+    }
+}
+/* Small Devices */
+@media(min-width: 768px) and (max-width: 991px){
+    .row{
+        margin-right: 0;
+    }
+    .site-nav-wrapper{
+        padding: 0;
+    }
+    #home-heading h1{
+        font-size: 41px;
+    }
+    #home-text p{
+        font-size: 13px;
+    }
+    .btn-general{
+        padding: 8px 35px;
+        font-size: 10px; 
+    }
+    .vertical-heading h2{
+        font-size: 29px;
+    }
+    #tech-statement h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .r-tabs-accordion-title{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+    }
+    .r-tabs-accordion-title.r-tabs-state-active a{
+        color:  #f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding: 5px;
+        transition: border-color 300ms linear;
+    }
+    .pricing-table .price h2{
+        margin: 0 0 0 6px;
+        font-size: 35px;
+    }
+    .blog-post .post-meta p{
+        line-height: 14px;
+    }
+    ul.office-details li i{
+        width: 25px;
+    }
+    ul.office-details li{
+        margin-right: 15px;
+    }
+    .stats.item p{
+        line-height: 18px;
+    }
+}
+/* Extra Small Devices */
+@media(max-width: 767px){
+    .navbar{
+        padding: 20px 0;
+    }
+    .site-nav-wrapper, .white-nav-top{
+        padding: 0;
+    }
+    #mobile-nav-btn{
+        display: block;
+    }
+    #home-heading h1{
+        font-size: 22px;
+    }
+    #home-text p{
+        font-size: 13px;
+        line-height: 18px;
+        margin: 8px 2px 30px 2px;
+    }
+    .btn-general{
+        padding: 8px 25px 6px 25px;
+        font-size: 10px;
+    }
+    .content-box-lg{
+        padding: 70px 0;
+    }
+    .vertical-heading{
+        text-align: center;
+    }
+    .vertical-heading h5{
+        transform: rotate(0deg);
+        position: static;
+        margin-bottom: 15px;
+    }
+    .vertical-heading h2{
+        font-size: 29px;
+        line-height: normal;
+        margin: 0;
+    }
+    #about-left{
+        margin-bottom: 50px;
+    }
+    #about-right{
+        text-align: center;
+    }
+    .content-box-md{
+        padding: 80px 0;
+    }
+    .about-item{
+        padding: 55px 30px;
+        margin-bottom: 35px;
+
+    }
+    .about-item i{
+        font-size: 30px;
+    }
+    .about-item h3{
+        font-size: 18px;
+    }
+    #team-left .vertical-heading{
+        min-height: 130px;
+    }
+    .skill h4{
+        font-size: 14px;
+        line-height: 35px;
+    }
+    #tech-statement h3{
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .horizontal-heading{
+        margin-bottom: 40px;
+    }
+    .horizontal-heading h2{
+        font-size: 30px;
+    }
+    .service:hover .icon{
+        color: #f4c613;
+        transform: translateX(20px);
+        transition: all linear 400ms;
+    }
+    .service{
+        text-align: center;
+    }
+    .service h4{
+        font-size: 18px;
+    }
+    .r-tabs-accordion-title{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a{
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;  
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    .r-tabs-accordion-title.r-tabs-state-active a{
+        color:  #f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding: 5px;
+        transition: border-color 300ms linear;
+    }
+    #services-tabs .tab-bg{
+        text-align: center;
+        padding: 40px 30px;
+    }
+    #services-tabs h2{
+        font-size: 40px;
+    }
+    #services-tabs h3{
+        font-size: 28px;
+    }
+    #isotope-filters{
+        margin-bottom: 10px;
+        padding: 10px 10px 10px 0;
+    }
+    #isotope-filters button{
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background: transparent;
+        box-shadow: none;
+        padding-right: 10px; 
+        outline: none;
+    }
+    #isotope-filters button span{
+        display: block;
+        padding-bottom: 2px;
+    }
+    #isotope-filters button.active span{
+        color: #f4c613;
+        border-bottom: 3px solid #f4c613;
+        transition: border-color .6s ease-in-out;
+    }
+    #portfolio{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    #testimonial-slider{
+        top: 0;
+    }
+    #testimonials .vertical-heading{
+        padding: 0;
+    }
+    .testimonial h3{
+        font-size: 17px;
+    }
+    .testimonial .stars{
+        font-size: 16px;
+    }
+    .author img{
+        width: 80px !important;
+    }
+    .testimonial .row{
+        margin: 0;
+    }
+    .pricing-table{
+        margin-bottom: 30px;
+    }
+    .pricing-table .price h2{
+        font-size: 28px;
+        margin: 0 0 0 16px;
+    }
+    .stats-item {
+        margin-bottom: 20px;
+        padding: 25px 5px;
+    }
+    .stats-item i{
+        font-size: 30px;
+    }
+    .stats-item h3{
+        font-size: 24px;
+    }
+    #blog-left{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .blog-post{
+        margin-bottom: 25px;
+    }
+    #contact-left{
+        text-align: center;
+    }
+    .office{
+        margin-bottom: 25px;
+        margin-left: 0; 
+    }
+    #contact-left ul{
+        margin-left: 0;
+    }
+    #contact-right{
+        margin-right: 0; 
+    }
+    ul.office-details li{
+        margin-top: 20px;
+        display: block;
+    }
+    ul.office-details li i{
+        width: auto;
+        display: block;
+        margin-bottom: 3px;
+    }
+    footer{
+        padding: 10px;
+    }
+    footer p{
+        font-size: 10px;
+    }
+}
+/* Extra Extra Small Devices */
+@media(max-width: 380px){
+    .navbar{
+        padding: 20px 0;
+    }
+    .site-nav-wrapper, .white-nav-top{
+        padding: 0;
+    }
+    #mobile-nav-btn{
+        display: block;
+    }
+    #home-heading{
+        font-size: 8px;
+    }
+    .btn-general{
+        padding: 6px 20px 6px 20px;
+        font-size: 8px;
+    }
+    #home-text{
+        font-size: 10px;
+    }
+    .vertical-heading h2{
+        font-size: 24px;
+    }
+    .vertical-heading h5{
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    #tech-statement{
+        font-size: 12px;
+        line-height: -1px;
+    }
+    .tab-bg{
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+    #isotope-filters .btn{
+        padding: 0;
+        margin: 10px 8px 10px 0;
+    }
+    .testimonial h3{
+        font-size: 9px;
+    }
+    .testimonial i{
+        font-size: 10px;
+    }
+    .testimonial p{
+        font-size: 9px;
+    }
+    #testimonial-slider{
+        margin: 0;
+    }
+    .horizontal-heading h2{
+        font-size: 24px;
+    }
+    .horizontal-heading h5{
+        font-size: 13px;
+    }
+    footer{
+        padding: 1px;
+    }
+    footer p{
+        font-size: 7px;
+    }
+    #team-members{
+        font-size: 2px;
+    }
+}
+
+
