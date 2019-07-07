@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#preloader{
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 99999;
+}
+
+#status{
+    background: url('../img/preloader/Facebook-1.1s-200px.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    top: 40%;    
+}
+header{
+    div{
+        button{
+            
+            padding: 10px;
+            border-radius: none;
+            margin: 20px 0 0 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
